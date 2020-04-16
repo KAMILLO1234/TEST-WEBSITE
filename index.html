@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-EN">
+<head>
+<meta charset="UTF-8">
+<title>Nauka na własnej skórze - koronawirusowa strona internetowa |•·-–—~»> Kamil Kras</title>
+<meta name="description" content="czyli jak COVID-19 pomógł mi rozpętać pierwszą stronę internetową, ucząc mnie jezyków wykorzystywanych w warstwie front-end : HTML5, CSS, JavaScript. Poznałem też ogólne zasady programowania w warstwie back-end (PYTHON, RUBY, PHP)">
+<link rel="stylesheet" href="css/main.css">
+<!--uwaga!
+plik na razie nie działa, formatowanie stylów poniżej
+  -->
+<style>
+html {
+  font-size: 62,5%;
+  {
+body {
+  margin: 2em;
+  padding: 1em;
+  font-family: 'Times New Roman', Arial, serif;
+  }
+.class1  {
+  backgroung: black;
+  display: block;
+  font: Arial Black;
+  font-size: 72px
+  }
+p {
+  font-size: 16px;
+  color: #fff;
+  }
+h1 {
+  font-size: 20px;
+  color: #aaa;
+  }
+table {
+  border: 2px dashed red;
+  margin: 25px 0 20px;
+  width: 80%;
+  background-color: #ADFF2F;
+  }
+.box-1  { 
+  width: 90pt;
+  height: 70pt;
+  background-color: #ADFF2F;
+.box-2  { 
+  width: 50%;
+  background-color: #ADFF2F;
+.box-3  { 
+  width: 70pt;
+  height: 90pt;
+  background-color: #ADFF2F;
+.form  {
+  text-align: justify;
+  overflow: auto;
+  }
+</style>
+</head>
+<body>
+<h1>1-sza strona</h1>
+<p id="first" rel="nofollow" target="_blank">paragraf pierwszy</p>
+<!--nie jest to podlinkowane - więc jest tu sens wstawiać atrybut target? czyczatopierw "zaanczorować"?-->
+<ol>
+<li>pierwszy&nbsp;element<br />listy</li>
+<li>drugi element listy</li>
+<ul>
+<li>punkt pirszy</li>
+<li>punkt drugszy</li>
+</ul>
+</ol>
+<a href="#first">wróć do paragrafu numero uno</a>
+<ul>
+<il><a href="kontakt/index.html">link do podstrony kontakt</a></il>
+<il><a href="#">link do tej strony</a></il>
+<!--selflink? Jak to się zwie?-->
+</ul>
+<table id="belka">
+<thead>
+<tr>
+<th></th>
+<th scope="col">poniedziałek</th>
+<th scope="col">wtorek</th>
+<th scope="col">środa</th>
+<th scope="col">czwartek</th>
+<th scope="col">piątek</th>
+<th scope="col">sobota</th>
+<th scope="col">niedziela</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">tydzień pierwszy</th>
+<td colspan="7">kwarantanna</td>
+</tr>
+<tr>
+<th scope="row">tydzień drugi</th>
+<td colspan="7">kwarantanna</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th scope="row">liczba zwiedzonych miejsc</th>
+<td colspan="7">0</td>
+<td colspan="7">0</td>
+</tr>
+</tfoot>
+</table>
+<figure>
+  <img src="grafika/xx.jpg" alt="logo xx" title="logo ze strony" width="225" height="225">
+  <figcaption>tu jest logo ściagnięte ze strony</figcaption>
+</figure>
+<label>podaj sort code<br /><input type="text"></label>
+<input type="text" placeholder="chuj we co tu wpisać">
+<!--to można zagniezdzić zamiast tego w input-->
+<label for="dziąsło>jakie masz dziąsła</label>
+<input type="text" id="dziąsło">
+<!--stary sposób, lepiej zagnieździć (bez id wtedy)-->
+<p>Gdybyś mógł iść na zakupy z czym zjadłbyś schaboszczaka - nożesz wybrać tylko jeden:<p>
+<label>
+  <input type="radio" name="food" value="Frytki"> Frytki
+</label>
+<label>
+  <input type="radio" name="food" value="Ziemniaki" checked> Ziemniaki
+</label>
+<label>
+  <input type="radio" name="food" value="Ryż" disabled> Ryż <!--drogi ten ryż, nima zaznaczania!-->
+</label>
+<label><input type="checkbox" checked>znam zasady kwarantanny</label>
+<div>
+<p>opisz nam hostorię swojego życia, nie krępuj się. Masz na to 400 wierszy i 3 miesiące</p>
+<textarea class="form" cols="50" rows="400"></textarea>
+</div>
+<label for="opcje">możesz wybrać wiecej niż jedną opcję kredytową, nie to co ze schabowym</label>
+<!-- i tak nic to nie da, bank cię wyrucha, pozdrawiam-->
+<select id="opcje" multiply>
+  <option value="1" selected>Opcja 1</option>
+  <option value="2">Opcja 2</option>
+  <option value="3">Opcja 3</option>
+</select>
+<fieldset>
+<legend>Dane Osobowe</legend>
+<label>Imię<input type="text"></label>
+<label>Nazwisko<input type="text"></label>
+</fieldset>
+<div class=".class1">
+<a alt="tekst z dupy>tu będzie<em><b>choinka</b></em></a>
+<link rel=""icon" href="grafika/christmas-tree.png" type="image/x-icon">
+</div>
+<div class="box-1"></div>
+<div class="box-2">to jest prosty do napisania kutasek w CSS, prawe jądro jest węższe i dłuższe</div>
+<div class="box-3"></div>
+<div>
+<svg> <circle r="50" cx="50" cy="50" fill="green"> </svg>
+</div>
+<footer style="text-align="center" clear="both">autor tego tworu nie zgłasza żadnych praw autorskich do wykorzystanych elementów</footer>
+</body>
+</html>
+
+<!--css
+.class1 {
+  backgroung: black;
+  display: block;
+  font: Arial Black;
+  font-size: 72px
+  }
+
+-->
